@@ -7,7 +7,7 @@
     --main2: #FFFFEB;
     --contrast: #8578ff;
     /*ALL TEXT BLACK OR ELSE WCAG WILL MAKE U SEPPUKU*/
-    background: url(ginghamyellow.png);
+    background-image: ginghamyellow.png;
 }
 
 html{
