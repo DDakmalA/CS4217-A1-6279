@@ -1,0 +1,256 @@
+:root{
+    --crem: #f4dbda;
+    --txt: #000;
+    --main: #ffe789; 
+    --mute: #d1d1cd;
+    /*if u use this color for text im killing u*/
+    --main2: #FFFFEB;
+    --contrast: #8578ff;
+    /*ALL TEXT BLACK OR ELSE WCAG WILL MAKE U SEPPUKU*/
+    background: url(media/ginghamyellow.png);
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin: 0;
+    color: var(--txt);
+    /*background: white;*/
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    color: var(--txt);
+}
+
+img{
+    width: 400px;
+    height:auto;
+    border-radius: .8rem;
+}
+
+.soasimg {
+    height: auto;
+    width: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container{
+    padding: .4rem .6rem;
+    border-radius:.2rem; 
+    text-decoration: none;
+    max-width: 1200px;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.L2R{
+    display: inline-block;
+}
+
+header{
+    background: var(--main);
+    border-bottom: 2px solid black;
+}
+
+header .up{
+    align-items:center; 
+    padding:.75rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul{
+    list-style:none;  
+    
+    padding:0; 
+    margin:0 0 1rem 0}
+
+nav ul li{
+    display: inline;
+}
+
+nav a{
+    display:inline-block; 
+    padding:.4rem 5rem; 
+    justify-content: center;
+    color: var(--txt);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    background: var(--txt);
+    color: var(--main);
+    border-radius:.25rem;
+}
+
+
+.card, .form, .map{
+    background: var(--main2);
+    border:1px solid var(--txt); 
+    border-radius:.75rem; 
+    margin:1rem;
+    padding:1rem; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card p, h3{
+    padding: 2px;
+}
+
+.aboutcard{
+    text-align: center;
+    background-color: var(--main2);
+    border:1px solid var(--txt); 
+    border-radius:.75rem; 
+    max-width: 40%;
+    margin:1rem;
+    padding:1rem; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.minitrav{
+    justify-content: center;
+    text-align: center;
+    display: grid;
+    gap: 1.2em;
+    grid-template-columns: minmax(40%, 1fr) minmax(40%, 1fr);
+    background: var(--main2);
+    border:1px solid var(--txt); 
+    border-radius:.75rem; 
+    margin:1rem;
+    padding:1rem; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+.drawer {
+  background-color: var(--main2);
+  color: var(--txt);
+  cursor: pointer;
+  padding: 18px;
+  width: 800px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .drawer:hover {
+  background-color: var(--mute); 
+}
+
+.infobox {
+  padding: 0 18px;
+  display: none;
+  margin-left: 346px;
+  max-width: 763.5px;
+  background-color: white;
+  overflow: hidden;
+}
+
+a{
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover{
+    text-decoration: none;
+    background-color: black;
+    color: var(--main);
+    border-radius: .5rem;
+}
+
+.prevbtn, .nextbtn{
+    cursor: pointer;
+    transition: 0.6s ease;
+    user-select: none;
+}
+
+.placecard img{
+    width: 400px;
+    height: auto;
+    
+}
+
+.quickdot{
+    text-align: center;
+}
+
+.accommodation h2, h3{
+    text-decoration: underline;
+}
+
+.activities img{
+    height: 500px;
+    width: auto;
+}
+
+/* =phone size= */
+@media screen and (max-width: 600px){
+    header{
+    background: var(--main);
+    border-bottom: 2px solid black;
+}
+    
+
+    .up{
+    align-items:center; 
+    padding:.75rem 0;
+    display: flex;
+    justify-content: center;
+    overflow:hidden;
+}
+
+    img {
+        width:280px;
+        height:auto;
+        border-radius: .8rem;
+    }
+
+    .activities img{
+        width: 380px;
+        height: auto;
+    }
+
+    .soasimg{
+        margin: 10px;
+        width: 350px;
+        height: auto;
+
+    }
+
+    .aboutcard{
+        max-width: 70%;
+        font-size: 20px;
+    }
+
+    .minitrav{
+        display: block;
+
+    }
+
+    .infobox{
+        margin-left: 0;
+    }
+
+    iframe{
+        width: 350px;
+        height: 350px;
+        border: 0;
+    }
+}

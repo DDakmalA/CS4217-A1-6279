@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="media/simpor.png" sizes="32x32">
+    <title>BruBuddy!</title>
+</head>
+<!--trip planner-->
+<body>
+    <header>
+        <div class="up">
+            <nav>
+                <ul>
+                    <li><a href="index.html" id="Home">Home</a></li>
+                    <li><a href="about.html" id="About">About</a></li>
+                    <li><a href="brubud.html" id="BruBud">BruBuddy</a></li>
+                    <li><a href="travinfo.html" id="Travinfo">Travel information</a></li>
+                    <li><a href="contact.html" id="Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<main>
+    <h2>Plan your trip in Brunei Darussalam with BruBuddy!</h2>
+    <!--I'm BruBuddy- draw a cute little stick dude
+        accommodation
+            flights
+            events
+            -->
+    <section class="accommodation"> <!--slideshow container-->
+
+        <h2>Where you can stay</h2>
+
+            <div class="placecard"> <!--class myslides-->
+                <!--img here-->
+                <img src="media/radissonlobby.avif" >
+                <p><a href="https://www.radissonhotels.com/en-us/hotels/radisson-bandar-seri-begawan?facilitatorId=RHGSEM&cid=a%3Aps+b%3Aggl+c%3Aapac+i%3Adisplay+e%3Arhg+d%3Aseap+r%3Apmax+f%3Aen-US+g%3Aho+h%3ABNBWNDAR+v%3Acf&gad_source=5&gad_campaignid=23103863689&gclid=Cj0KCQiAtvXXBhC2ARIsAJc8SURtWWsxJBJg24aH9R3eHgc2IG070ufGie7PnWhMk2bJldgAwiN3_4kaAoJXEALw_wcB&gclsrc=aw.ds&gallery=open">
+                Raddison Hotel</a></p> <!--class text-->
+            </div>
+
+            <div class="placecard"> <!--class myslides-->
+                <!--img here-->
+                <img src="media/the-rizqun-international-hotel-08.webp">
+                <!--hotelname-->
+                <p><a href="https://arhbrunei.co/therizquninternationalhotel/"></a>
+                    Rizqun International Hotel</a></p> <!-- classtext-->
+            </div>
+
+            <div class="placecard"> <!--class myslides-->
+                <!--img here-->
+                <img src="media/GARDEN-SENTRAL-HOTEL03-scaled.webp">
+                <p>
+                <a href="https://gardensentralhotel.com"> <!--class text-->
+                    Garden Sentral Hotel</a></p>
+            </div>
+
+            <a class="prevbtn" onclick="addPlaces(-1)">◀</a> <!--onclick  plusslides(-1)-->
+            <a class="nextbtn" onclick="addPlaces(1)">▶</a> <!--onclick  plusslides(1)-->
+    </section>
+
+    <section class="activities">
+        <h3>What's happening?</h3>
+            <p>Check out the official Calendar for <a href="https://www.bruneitourism.com/events/">Brunei's 2026 events</a></p>
+        <!--calendar img here-->
+        <img src="media/CalendarofEvents_2026-18Aug-1-2048x1152.jpg">
+        <img src="media/CalendarofEvents_2026-18Aug-2-2048x1152.jpg">
+        <img src="media/CalendarofEvents_2026-18Aug-3-2048x1152.jpg">
+    </section>
+</main>
+
+    <footer>
+        <p>Contact the BruTravel team directly :
+            <br>
+            +673 xxx xxxx</p>
+        <p><a href="#top" id="backtotop">Back to Top</a></p>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
