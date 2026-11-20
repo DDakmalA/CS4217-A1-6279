@@ -6,7 +6,7 @@
     --main2: #FFFFEB;
     --contrast: #8578ff;
    
-    background-image: url(ginghamyellow.png);
+    background-image: url("ginghamyellow.png");
     background-repeat: repeat;
 }
 
